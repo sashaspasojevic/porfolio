@@ -11,6 +11,9 @@ navBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   sidebar.classList.remove("show-sidebar");
 });
+sidebar.addEventListener("click", () => {
+  sidebar.classList.remove("show-sidebar");
+});
 
 // set year
 

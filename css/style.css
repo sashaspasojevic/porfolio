@@ -88,7 +88,7 @@ p {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "Roboto", sans-serif; }
@@ -370,7 +370,7 @@ p {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "Roboto", sans-serif; }
@@ -607,7 +607,7 @@ p {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "Roboto", sans-serif; }
@@ -848,7 +848,7 @@ p {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "Roboto", sans-serif; }
@@ -1119,7 +1119,7 @@ p {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "Roboto", sans-serif; }
@@ -1314,7 +1314,7 @@ p {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "Roboto", sans-serif; }
@@ -1518,7 +1518,7 @@ p {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "Roboto", sans-serif; }
@@ -1663,7 +1663,7 @@ breakpoint
   .connect .connect-banner {
     background-color: #fffaeb;
     padding: 3rem 15% 12rem 15%;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); }
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); }
     .connect .connect-banner .section-title {
       margin-bottom: 2rem; }
     .connect .connect-banner .connect-text {
@@ -1751,7 +1751,7 @@ p {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "Roboto", sans-serif; }
@@ -2008,7 +2008,7 @@ p {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "Roboto", sans-serif; }
