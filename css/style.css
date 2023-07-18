@@ -1669,6 +1669,10 @@ breakpoint
     .connect .connect-banner .connect-text {
       font-size: 1.2rem;
       font-weight: 700; }
+      @media only screen and (min-width: 200px) and (max-width: 650px) {
+        .connect .connect-banner .connect-text {
+          font-size: 1rem;
+          font-weight: 500; } }
       .connect .connect-banner .connect-text a {
         transition: all 0.3s linear;
         color: #31c48e; }
