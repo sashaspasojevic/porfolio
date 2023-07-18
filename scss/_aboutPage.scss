@@ -1,0 +1,28 @@
+@import "var";
+@import "global";
+@import "mixins";
+
+.abut-page {
+  .section-title::after {
+    width: 5%;
+  }
+  .about-page_info {
+    text-indent: 50px;
+    max-width: 700px;
+    margin: 0 auto;
+    @include breakpoint(tablet){
+        text-indent: 30px;
+    }
+    @include breakpoint(phone){
+        text-indent: 15px;
+    }
+
+    a {
+      color: $clr-primary-5;
+      text-decoration: underline;
+      &:hover {
+        color: $clr-primary-1;
+      }
+    }
+  }
+}

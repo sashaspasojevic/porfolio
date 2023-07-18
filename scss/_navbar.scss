@@ -1,0 +1,125 @@
+nav {
+  padding: 10px 0;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-header_logo {
+    width: 100px;
+    @include breakpoint(phone) {
+      width: 80px;
+    }
+    a:hover {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    @include breakpoint(phone) {
+      display: none;
+    }
+    li:not(:last-child) {
+      margin-right: 40px;
+    }
+    a {
+      text-transform: capitalize;
+      color: $clr-grey-1;
+      font-weight: bold;
+      letter-spacing: $spacing;
+      transition: $transition;
+      &:hover {
+        color: $clr-primary-5;
+      }
+    }
+  }
+}
+
+.nav-header {
+  @include breakpoint(phone) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-btn {
+    display: none;
+    background: transparent;
+    border-color: transparent;
+    color: $clr-primary-5;
+    font-size: 2rem;
+    cursor: pointer;
+    @include breakpoint(phone) {
+      display: block;
+    }
+  }
+}
+
+.sidebar {
+  transform: translate(-100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $clr-grey-10;
+  z-index: 4;
+  transition: $transition;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    font-size: 2rem;
+    text-transform: capitalize;
+    transition: $transition;
+    color: $clr-grey-5;
+    letter-spacing: $spacing;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    &:hover {
+      color: $clr-primary-5;
+      transform: scale(0.9);
+    }
+  }
+
+//   .social-icons {
+//     width: 100%;
+//     display: flex;
+//     margin-top: 5rem;
+//     justify-content: space-around;
+//     .social-icon {
+//       font-size: 1.5em;
+//       color: $clr-grey-1;
+//       transition: $transition;
+//       &:hover {
+//         color: $clr-primary-5;
+//         transform: scale(1.2);
+//       }
+//     }
+//   }
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    border: none;
+    cursor: pointer;
+    color: $clr-grey-1;
+    transition: $transition;
+    background: transparent;
+    &:hover {
+      color: $clr-primary-5;
+      transform: scale(0.9);
+    }
+  }
+}
+
+.show-sidebar {
+  transform: translate(0);
+}

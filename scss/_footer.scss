@@ -1,0 +1,24 @@
+@import "var";
+@import "mixins";
+@import "global";
+
+.footer {
+  padding-bottom: 2rem;
+  background-color: $clr-grey-2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .social-icons {
+    margin-bottom: 2rem;
+    .social-icon {
+      color: $clr-primary-5;
+      &:hover {
+        color: $clr-primary-10;
+      }
+    }
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+}

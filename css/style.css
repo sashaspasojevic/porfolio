@@ -1,0 +1,2172 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary); }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.25rem; }
+
+h4 {
+  font-size: 0.875rem; }
+
+p {
+  margin-bottom: 1.25rem;
+  color: #617d98; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+.container {
+  width: 80%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 95%; } }
+
+.py {
+  padding: 60px 0 90px; }
+  @media (max-width: 1300px) {
+    .py {
+      padding: 50px 0; } }
+  @media (max-width: 768px) {
+    .py {
+      padding: 30px 0; } }
+
+.btn {
+  text-transform: uppercase;
+  background-color: #31c48e;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.3s linear;
+  font-size: 0.875rem0;
+  border: 2px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 0.5rem; }
+  .btn:hover {
+    color: #513c06;
+    background: #f9da8b; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.social-icons {
+  width: 100%;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-around; }
+  .social-icons .social-icon {
+    font-size: 1.5em;
+    color: #102a42;
+    transition: all 0.3s linear; }
+    .social-icons .social-icon:hover {
+      color: #31c48e;
+      transform: scale(1.2); }
+
+.underline, .hero .hero-info h1::before {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: #31c48e;
+  margin-left: auto;
+  margin-right: auto; }
+
+.photo, .hero .hero-img .hero-photo, .about .about-img .about-photo {
+  max-width: 25rem;
+  max-height: 30rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  position: relative; }
+
+.section-title {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 50px; }
+  .section-title::after {
+    display: block;
+    content: "";
+    width: 20%;
+    height: 5px;
+    background: #31c48e;
+    margin: 10px auto 70px auto; }
+
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+nav {
+  padding: 10px 0; }
+
+.nav-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .nav-center .nav-header_logo {
+    width: 100px; }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      .nav-center .nav-header_logo {
+        width: 80px; } }
+    .nav-center .nav-header_logo a:hover {
+      opacity: 0.5;
+      cursor: pointer; }
+  .nav-center .nav-links {
+    display: flex; }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      .nav-center .nav-links {
+        display: none; } }
+    .nav-center .nav-links li:not(:last-child) {
+      margin-right: 40px; }
+    .nav-center .nav-links a {
+      text-transform: capitalize;
+      color: #102a42;
+      font-weight: bold;
+      letter-spacing: 0.25rem;
+      transition: all 0.3s linear; }
+      .nav-center .nav-links a:hover {
+        color: #31c48e; }
+
+@media only screen and (min-width: 200px) and (max-width: 650px) {
+  .nav-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; } }
+.nav-header .nav-btn {
+  display: none;
+  background: transparent;
+  border-color: transparent;
+  color: #31c48e;
+  font-size: 2rem;
+  cursor: pointer; }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .nav-header .nav-btn {
+      display: block; } }
+
+.sidebar {
+  transform: translate(-100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f1f5f8;
+  z-index: 4;
+  transition: all 0.3s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .sidebar a {
+    font-size: 2rem;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    color: #617d98;
+    letter-spacing: 0.25rem;
+    margin-bottom: 1.5rem;
+    display: inline-block; }
+    .sidebar a:hover {
+      color: #31c48e;
+      transform: scale(0.9); }
+  .sidebar .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    border: none;
+    cursor: pointer;
+    color: #102a42;
+    transition: all 0.3s linear;
+    background: transparent; }
+    .sidebar .close-btn:hover {
+      color: #31c48e;
+      transform: scale(0.9); }
+
+.show-sidebar {
+  transform: translate(0); }
+
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary); }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.25rem; }
+
+h4 {
+  font-size: 0.875rem; }
+
+p {
+  margin-bottom: 1.25rem;
+  color: #617d98; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+.container {
+  width: 80%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 95%; } }
+
+.py {
+  padding: 60px 0 90px; }
+  @media (max-width: 1300px) {
+    .py {
+      padding: 50px 0; } }
+  @media (max-width: 768px) {
+    .py {
+      padding: 30px 0; } }
+
+.btn {
+  text-transform: uppercase;
+  background-color: #31c48e;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.3s linear;
+  font-size: 0.875rem0;
+  border: 2px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 0.5rem; }
+  .btn:hover {
+    color: #513c06;
+    background: #f9da8b; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.social-icons {
+  width: 100%;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-around; }
+  .social-icons .social-icon {
+    font-size: 1.5em;
+    color: #102a42;
+    transition: all 0.3s linear; }
+    .social-icons .social-icon:hover {
+      color: #31c48e;
+      transform: scale(1.2); }
+
+.underline, .hero .hero-info h1::before {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: #31c48e;
+  margin-left: auto;
+  margin-right: auto; }
+
+.photo, .hero .hero-img .hero-photo, .about .about-img .about-photo {
+  max-width: 25rem;
+  max-height: 30rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  position: relative; }
+
+.section-title {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 50px; }
+  .section-title::after {
+    display: block;
+    content: "";
+    width: 20%;
+    height: 5px;
+    background: #31c48e;
+    margin: 10px auto 70px auto; }
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-items: center; }
+  .hero .hero-info {
+    flex: 0 0 55%; }
+    @media only screen and (min-width: 651px) and (max-width: 896px) {
+      .hero .hero-info {
+        flex: 0 0 100%;
+        padding-left: 100px; } }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      .hero .hero-info {
+        flex: 0 0 100%;
+        padding-left: 50px; } }
+    .hero .hero-info h1::before {
+      display: block;
+      content: "";
+      margin-left: 0 !important; }
+    .hero .hero-info h4 {
+      color: #617d98; }
+    .hero .hero-info .hero-btn {
+      margin-top: 1.25rem; }
+    .hero .hero-info .social-icons {
+      justify-content: space-between;
+      width: 55%; }
+      @media only screen and (min-width: 651px) and (max-width: 896px) {
+        .hero .hero-info .social-icons {
+          width: 100%;
+          justify-content: space-around; } }
+      @media only screen and (min-width: 200px) and (max-width: 650px) {
+        .hero .hero-info .social-icons {
+          width: 100%;
+          justify-content: space-around; } }
+  .hero .hero-img {
+    position: relative; }
+    @media only screen and (min-width: 651px) and (max-width: 896px) {
+      .hero .hero-img {
+        display: none; } }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      .hero .hero-img {
+        display: none; } }
+    .hero .hero-img::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 2rem;
+      right: -2rem;
+      border: 0.25rem solid #f9da8b;
+      border-radius: 0.5rem; }
+
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary); }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.25rem; }
+
+h4 {
+  font-size: 0.875rem; }
+
+p {
+  margin-bottom: 1.25rem;
+  color: #617d98; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+.container {
+  width: 80%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 95%; } }
+
+.py {
+  padding: 60px 0 90px; }
+  @media (max-width: 1300px) {
+    .py {
+      padding: 50px 0; } }
+  @media (max-width: 768px) {
+    .py {
+      padding: 30px 0; } }
+
+.btn {
+  text-transform: uppercase;
+  background-color: #31c48e;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.3s linear;
+  font-size: 0.875rem0;
+  border: 2px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 0.5rem; }
+  .btn:hover {
+    color: #513c06;
+    background: #f9da8b; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.social-icons {
+  width: 100%;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-around; }
+  .social-icons .social-icon {
+    font-size: 1.5em;
+    color: #102a42;
+    transition: all 0.3s linear; }
+    .social-icons .social-icon:hover {
+      color: #31c48e;
+      transform: scale(1.2); }
+
+.underline, .hero .hero-info h1::before {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: #31c48e;
+  margin-left: auto;
+  margin-right: auto; }
+
+.photo, .hero .hero-img .hero-photo, .about .about-img .about-photo {
+  max-width: 25rem;
+  max-height: 30rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  position: relative; }
+
+.section-title {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 50px; }
+  .section-title::after {
+    display: block;
+    content: "";
+    width: 20%;
+    height: 5px;
+    background: #31c48e;
+    margin: 10px auto 70px auto; }
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  @media only screen and (min-width: 651px) and (max-width: 896px) {
+    .about {
+      display: block; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .about {
+      display: block; } }
+  .about .section-title {
+    text-align: left; }
+    .about .section-title::after {
+      width: 8%;
+      margin: 10px 0 70px 0; }
+  .about .about-img {
+    position: relative; }
+    .about .about-img::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 2rem;
+      left: -2rem;
+      border: 0.25rem solid #f9da8b;
+      border-radius: 0.5rem; }
+      @media only screen and (min-width: 651px) and (max-width: 896px) {
+        .about .about-img::before {
+          display: none; } }
+      @media only screen and (min-width: 200px) and (max-width: 650px) {
+        .about .about-img::before {
+          display: none; } }
+    @media only screen and (min-width: 651px) and (max-width: 896px) {
+      .about .about-img .about-photo {
+        max-width: unset;
+        width: 100%;
+        max-height: unset; } }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      .about .about-img .about-photo {
+        max-width: unset;
+        width: 100%;
+        max-height: unset; } }
+  .about .about-info {
+    width: 50%; }
+    @media only screen and (min-width: 651px) and (max-width: 896px) {
+      .about .about-info {
+        width: 100%;
+        margin-top: 100px; } }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      .about .about-info {
+        width: 100%;
+        margin-top: 100px; } }
+    .about .about-info .btn {
+      margin-top: 50px; }
+      @media only screen and (min-width: 651px) and (max-width: 896px) {
+        .about .about-info .btn {
+          margin-bottom: 50px; } }
+      @media only screen and (min-width: 200px) and (max-width: 650px) {
+        .about .about-info .btn {
+          margin-bottom: 50px; } }
+
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary); }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.25rem; }
+
+h4 {
+  font-size: 0.875rem; }
+
+p {
+  margin-bottom: 1.25rem;
+  color: #617d98; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+.container {
+  width: 80%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 95%; } }
+
+.py {
+  padding: 60px 0 90px; }
+  @media (max-width: 1300px) {
+    .py {
+      padding: 50px 0; } }
+  @media (max-width: 768px) {
+    .py {
+      padding: 30px 0; } }
+
+.btn {
+  text-transform: uppercase;
+  background-color: #31c48e;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.3s linear;
+  font-size: 0.875rem0;
+  border: 2px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 0.5rem; }
+  .btn:hover {
+    color: #513c06;
+    background: #f9da8b; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.social-icons {
+  width: 100%;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-around; }
+  .social-icons .social-icon {
+    font-size: 1.5em;
+    color: #102a42;
+    transition: all 0.3s linear; }
+    .social-icons .social-icon:hover {
+      color: #31c48e;
+      transform: scale(1.2); }
+
+.underline, .hero .hero-info h1::before {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: #31c48e;
+  margin-left: auto;
+  margin-right: auto; }
+
+.photo, .hero .hero-img .hero-photo, .about .about-img .about-photo {
+  max-width: 25rem;
+  max-height: 30rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  position: relative; }
+
+.section-title {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 50px; }
+  .section-title::after {
+    display: block;
+    content: "";
+    width: 20%;
+    height: 5px;
+    background: #31c48e;
+    margin: 10px auto 70px auto; }
+
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+.projects .section-title::after {
+  width: 4%; }
+.projects .projects-text {
+  margin: 0 auto;
+  width: 85vw;
+  max-width: 30rem; }
+  .projects .projects-text a {
+    color: #31c48e; }
+    .projects .projects-text a:hover {
+      color: #f9da8b; }
+
+.project {
+  position: relative;
+  background-color: #31c48e;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem; }
+  .project:hover .project-img {
+    opacity: 0.1; }
+  .project:hover::after {
+    opacity: 1;
+    transform: scale(0.8); }
+  .project:hover .project-info {
+    opacity: 1; }
+  .project::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0.25rem solid #fff;
+    border-radius: 0.5rem;
+    transition: all 0.3s linear;
+    opacity: 0; }
+  .project .project-img {
+    height: 15rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+    transition: all 0.3s linear; }
+  .project .project-info {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; }
+
+.projects-center {
+  display: grid;
+  grid-template-rows: 200px 200px;
+  gap: 1rem;
+  grid-template-areas: "a b b" "a c d";
+  margin-top: 50px; }
+  @media only screen and (min-width: 651px) and (max-width: 896px) {
+    .projects-center {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "a b " "c d"; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .projects-center {
+      display: block; } }
+  .projects-center .project {
+    height: 100%;
+    box-shadow: 0px 0px 0px 2px rgba(49, 196, 142, 0.2); }
+  .projects-center .project-img {
+    height: 100%; }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      .projects-center .project-img {
+        height: 15rem; } }
+  .projects-center .project-1 {
+    grid-area: b; }
+  .projects-center .project-2 {
+    grid-area: a; }
+  .projects-center .project-3 {
+    grid-area: c; }
+  .projects-center .project-4 {
+    grid-area: d; }
+
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary); }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.25rem; }
+
+h4 {
+  font-size: 0.875rem; }
+
+p {
+  margin-bottom: 1.25rem;
+  color: #617d98; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+.container {
+  width: 80%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 95%; } }
+
+.py {
+  padding: 60px 0 90px; }
+  @media (max-width: 1300px) {
+    .py {
+      padding: 50px 0; } }
+  @media (max-width: 768px) {
+    .py {
+      padding: 30px 0; } }
+
+.btn {
+  text-transform: uppercase;
+  background-color: #31c48e;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.3s linear;
+  font-size: 0.875rem0;
+  border: 2px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 0.5rem; }
+  .btn:hover {
+    color: #513c06;
+    background: #f9da8b; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.social-icons {
+  width: 100%;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-around; }
+  .social-icons .social-icon {
+    font-size: 1.5em;
+    color: #102a42;
+    transition: all 0.3s linear; }
+    .social-icons .social-icon:hover {
+      color: #31c48e;
+      transform: scale(1.2); }
+
+.underline, .hero .hero-info h1::before {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: #31c48e;
+  margin-left: auto;
+  margin-right: auto; }
+
+.photo, .hero .hero-img .hero-photo, .about .about-img .about-photo {
+  max-width: 25rem;
+  max-height: 30rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  position: relative; }
+
+.section-title {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 50px; }
+  .section-title::after {
+    display: block;
+    content: "";
+    width: 20%;
+    height: 5px;
+    background: #31c48e;
+    margin: 10px auto 70px auto; }
+
+.footer {
+  padding-bottom: 2rem;
+  background-color: #243a52;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .footer .social-icons {
+    margin-bottom: 2rem; }
+    .footer .social-icons .social-icon {
+      color: #31c48e; }
+      .footer .social-icons .social-icon:hover {
+        color: #fffaeb; }
+  .footer p {
+    font-size: 1.25rem; }
+
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary); }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.25rem; }
+
+h4 {
+  font-size: 0.875rem; }
+
+p {
+  margin-bottom: 1.25rem;
+  color: #617d98; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+.container {
+  width: 80%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 95%; } }
+
+.py {
+  padding: 60px 0 90px; }
+  @media (max-width: 1300px) {
+    .py {
+      padding: 50px 0; } }
+  @media (max-width: 768px) {
+    .py {
+      padding: 30px 0; } }
+
+.btn {
+  text-transform: uppercase;
+  background-color: #31c48e;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.3s linear;
+  font-size: 0.875rem0;
+  border: 2px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 0.5rem; }
+  .btn:hover {
+    color: #513c06;
+    background: #f9da8b; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.social-icons {
+  width: 100%;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-around; }
+  .social-icons .social-icon {
+    font-size: 1.5em;
+    color: #102a42;
+    transition: all 0.3s linear; }
+    .social-icons .social-icon:hover {
+      color: #31c48e;
+      transform: scale(1.2); }
+
+.underline, .hero .hero-info h1::before {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: #31c48e;
+  margin-left: auto;
+  margin-right: auto; }
+
+.photo, .hero .hero-img .hero-photo, .about .about-img .about-photo {
+  max-width: 25rem;
+  max-height: 30rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  position: relative; }
+
+.section-title {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 50px; }
+  .section-title::after {
+    display: block;
+    content: "";
+    width: 20%;
+    height: 5px;
+    background: #31c48e;
+    margin: 10px auto 70px auto; }
+
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+.abut-page .section-title::after {
+  width: 5%; }
+.abut-page .about-page_info {
+  text-indent: 50px;
+  max-width: 700px;
+  margin: 0 auto; }
+  @media only screen and (min-width: 651px) and (max-width: 896px) {
+    .abut-page .about-page_info {
+      text-indent: 30px; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .abut-page .about-page_info {
+      text-indent: 15px; } }
+  .abut-page .about-page_info a {
+    color: #31c48e;
+    text-decoration: underline; }
+    .abut-page .about-page_info a:hover {
+      color: #513c06; }
+
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary); }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.25rem; }
+
+h4 {
+  font-size: 0.875rem; }
+
+p {
+  margin-bottom: 1.25rem;
+  color: #617d98; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+.container {
+  width: 80%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 95%; } }
+
+.py {
+  padding: 60px 0 90px; }
+  @media (max-width: 1300px) {
+    .py {
+      padding: 50px 0; } }
+  @media (max-width: 768px) {
+    .py {
+      padding: 30px 0; } }
+
+.btn {
+  text-transform: uppercase;
+  background-color: #31c48e;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.3s linear;
+  font-size: 0.875rem0;
+  border: 2px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 0.5rem; }
+  .btn:hover {
+    color: #513c06;
+    background: #f9da8b; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.social-icons {
+  width: 100%;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-around; }
+  .social-icons .social-icon {
+    font-size: 1.5em;
+    color: #102a42;
+    transition: all 0.3s linear; }
+    .social-icons .social-icon:hover {
+      color: #31c48e;
+      transform: scale(1.2); }
+
+.underline, .hero .hero-info h1::before {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: #31c48e;
+  margin-left: auto;
+  margin-right: auto; }
+
+.photo, .hero .hero-img .hero-photo, .about .about-img .about-photo {
+  max-width: 25rem;
+  max-height: 30rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  position: relative; }
+
+.section-title {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 50px; }
+  .section-title::after {
+    display: block;
+    content: "";
+    width: 20%;
+    height: 5px;
+    background: #31c48e;
+    margin: 10px auto 70px auto; }
+
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+.connect {
+  min-height: 40vh;
+  position: relative;
+  padding: 10rem 0 5rem 0;
+  margin: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%); }
+  .connect::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.45;
+    z-index: -1; }
+  .connect .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    z-index: -2; }
+  .connect .connect-banner {
+    background-color: #fffaeb;
+    padding: 3rem 15% 12rem 15%;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); }
+    .connect .connect-banner .section-title {
+      margin-bottom: 2rem; }
+    .connect .connect-banner .connect-text {
+      font-size: 1.2rem;
+      font-weight: 700; }
+      .connect .connect-banner .connect-text a {
+        transition: all 0.3s linear;
+        color: #31c48e; }
+        .connect .connect-banner .connect-text a:hover {
+          color: #f9da8b; }
+
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary); }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.25rem; }
+
+h4 {
+  font-size: 0.875rem; }
+
+p {
+  margin-bottom: 1.25rem;
+  color: #617d98; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+.container {
+  width: 80%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 95%; } }
+
+.py {
+  padding: 60px 0 90px; }
+  @media (max-width: 1300px) {
+    .py {
+      padding: 50px 0; } }
+  @media (max-width: 768px) {
+    .py {
+      padding: 30px 0; } }
+
+.btn {
+  text-transform: uppercase;
+  background-color: #31c48e;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.3s linear;
+  font-size: 0.875rem0;
+  border: 2px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 0.5rem; }
+  .btn:hover {
+    color: #513c06;
+    background: #f9da8b; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.social-icons {
+  width: 100%;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-around; }
+  .social-icons .social-icon {
+    font-size: 1.5em;
+    color: #102a42;
+    transition: all 0.3s linear; }
+    .social-icons .social-icon:hover {
+      color: #31c48e;
+      transform: scale(1.2); }
+
+.underline, .hero .hero-info h1::before {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: #31c48e;
+  margin-left: auto;
+  margin-right: auto; }
+
+.photo, .hero .hero-img .hero-photo, .about .about-img .about-photo {
+  max-width: 25rem;
+  max-height: 30rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  position: relative; }
+
+.section-title {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 50px; }
+  .section-title::after {
+    display: block;
+    content: "";
+    width: 20%;
+    height: 5px;
+    background: #31c48e;
+    margin: 10px auto 70px auto; }
+
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+.certificate .section-title::after {
+  width: 10%; }
+
+.certificate-center {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  @media only screen and (min-width: 651px) and (max-width: 896px) {
+    .certificate-center {
+      display: block; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .certificate-center {
+      display: block; } }
+
+.card {
+  width: 30%;
+  height: 27rem;
+  perspective: 1500px;
+  box-shadow: 0px 0px 0px 2px rgba(49, 196, 142, 0.2);
+  border-radius: 0.5rem; }
+  @media only screen and (min-width: 651px) and (max-width: 896px) {
+    .card {
+      width: 100%; }
+      .card:not(:last-child) {
+        margin-bottom: 40px; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .card {
+      width: 100%; }
+      .card:not(:last-child) {
+        margin-bottom: 40px; } }
+
+.card-side {
+  transition: all 2s linear;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+  border-radius: 0.5rem; }
+
+.card-front {
+  background: red; }
+
+.card-front img {
+  background-size: cover;
+  width: 100%;
+  height: 27rem;
+  border-radius: 0.5rem; }
+
+.card-back {
+  background: #fffaeb;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.card:hover .card-front {
+  transform: rotateY(-180deg); }
+
+.card:hover .card-back {
+  transform: rotateY(0); }
+
+.certificate-btn {
+  margin: 100px auto 50px auto;
+  text-transform: none;
+  display: block !important; }
+
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary); }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.25rem; }
+
+h4 {
+  font-size: 0.875rem; }
+
+p {
+  margin-bottom: 1.25rem;
+  color: #617d98; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+.container {
+  width: 80%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 95%; } }
+
+.py {
+  padding: 60px 0 90px; }
+  @media (max-width: 1300px) {
+    .py {
+      padding: 50px 0; } }
+  @media (max-width: 768px) {
+    .py {
+      padding: 30px 0; } }
+
+.btn {
+  text-transform: uppercase;
+  background-color: #31c48e;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.3s linear;
+  font-size: 0.875rem0;
+  border: 2px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 0.5rem; }
+  .btn:hover {
+    color: #513c06;
+    background: #f9da8b; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.social-icons {
+  width: 100%;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-around; }
+  .social-icons .social-icon {
+    font-size: 1.5em;
+    color: #102a42;
+    transition: all 0.3s linear; }
+    .social-icons .social-icon:hover {
+      color: #31c48e;
+      transform: scale(1.2); }
+
+.underline, .hero .hero-info h1::before {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: #31c48e;
+  margin-left: auto;
+  margin-right: auto; }
+
+.photo, .hero .hero-img .hero-photo, .about .about-img .about-photo {
+  max-width: 25rem;
+  max-height: 30rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  position: relative; }
+
+.section-title {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 50px; }
+  .section-title::after {
+    display: block;
+    content: "";
+    width: 20%;
+    height: 5px;
+    background: #31c48e;
+    margin: 10px auto 70px auto; }
+
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 58, 82, 0.5);
+  display: grid;
+  place-items: center;
+  transition: all 0.3s linear;
+  visibility: hidden;
+  z-index: -10; }
+
+.open-modal {
+  visibility: visible;
+  z-index: 10; }
+
+.modal-container {
+  background: #fff;
+  border-radius: 0.5rem;
+  width: 90vw;
+  height: 99%;
+  max-width: 620px;
+  text-align: center;
+  place-items: center;
+  position: relative;
+  background-image: url(../img/CV\ Sasa\ Spasojevic.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-y: auto; }
+
+.close-btnModal, .download-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: transparent;
+  background-color: transparent;
+  color: #31c48e;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  border: none; }
+  .close-btnModal:hover, .download-btn:hover {
+    color: #f9da8b;
+    transform: scale(1.3); }
+
+.download-btn {
+  right: unset;
+  left: 1rem; }
+
+/*# sourceMappingURL=style.css.map */

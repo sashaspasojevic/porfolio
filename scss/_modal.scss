@@ -1,0 +1,61 @@
+@import "var";
+@import "global";
+@import "mixins";
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba($clr-grey-2, 0.5);
+  display: grid;
+  place-items: center;
+  transition: $transition;
+  visibility: hidden;
+  z-index: -10;
+}
+
+.open-modal {
+  visibility: visible;
+  z-index: 10;
+}
+
+.modal-container {
+  background: $clr-white;
+  border-radius: $radius;
+  width: 90vw;
+  height: 99%;
+  max-width: $fixed-width;
+  text-align: center;
+  place-items: center;
+  position: relative;
+  background-image: url(../img/CV\ Sasa\ Spasojevic.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+    overflow-y: auto
+}
+
+.close-btnModal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: transparent;
+  background-color: transparent;
+  color: $clr-primary-5;
+  cursor: pointer;
+  transition: $transition;
+  border: none;
+  &:hover {
+    color: $clr-primary-7;
+    transform: scale(1.3);
+  }
+}
+
+.download-btn {
+  @extend .close-btnModal;
+  right: unset;
+  left: 1rem;
+}
