@@ -39,6 +39,9 @@ breakpoint
 *::after {
   box-sizing: border-box; }
 
+* {
+  scroll-behavior: smooth; }
+
 /* Remove default padding */
 ul,
 ol {
@@ -321,6 +324,9 @@ breakpoint
 *::after {
   box-sizing: border-box; }
 
+* {
+  scroll-behavior: smooth; }
+
 /* Remove default padding */
 ul,
 ol {
@@ -557,6 +563,9 @@ breakpoint
 *::before,
 *::after {
   box-sizing: border-box; }
+
+* {
+  scroll-behavior: smooth; }
 
 /* Remove default padding */
 ul,
@@ -798,6 +807,9 @@ breakpoint
 *::before,
 *::after {
   box-sizing: border-box; }
+
+* {
+  scroll-behavior: smooth; }
 
 /* Remove default padding */
 ul,
@@ -1070,6 +1082,9 @@ breakpoint
 *::after {
   box-sizing: border-box; }
 
+* {
+  scroll-behavior: smooth; }
+
 /* Remove default padding */
 ul,
 ol {
@@ -1264,6 +1279,9 @@ breakpoint
 *::before,
 *::after {
   box-sizing: border-box; }
+
+* {
+  scroll-behavior: smooth; }
 
 /* Remove default padding */
 ul,
@@ -1468,6 +1486,9 @@ breakpoint
 *::before,
 *::after {
   box-sizing: border-box; }
+
+* {
+  scroll-behavior: smooth; }
 
 /* Remove default padding */
 ul,
@@ -1701,6 +1722,9 @@ breakpoint
 *::before,
 *::after {
   box-sizing: border-box; }
+
+* {
+  scroll-behavior: smooth; }
 
 /* Remove default padding */
 ul,
@@ -1959,6 +1983,9 @@ breakpoint
 *::after {
   box-sizing: border-box; }
 
+* {
+  scroll-behavior: smooth; }
+
 /* Remove default padding */
 ul,
 ol {
@@ -2195,6 +2222,9 @@ breakpoint
 *::before,
 *::after {
   box-sizing: border-box; }
+
+* {
+  scroll-behavior: smooth; }
 
 /* Remove default padding */
 ul,

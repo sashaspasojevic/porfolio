@@ -7,7 +7,9 @@
 *::after {
   box-sizing: border-box;
 }
-
+* {
+  scroll-behavior: smooth;
+}
 /* Remove default padding */
 ul,
 ol {
@@ -115,6 +117,7 @@ select {
 .container {
   width: 80%;
   margin: 0 auto;
+  
   @include breakpoint(phone) {
     width: 90%;
   }
