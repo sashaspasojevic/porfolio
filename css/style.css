@@ -2376,6 +2376,16 @@ breakpoint
   right: 20px;
   visibility: hidden;
   opacity: 0; }
+  @media only screen and (min-width: 651px) and (max-width: 896px) {
+    .goToTop {
+      bottom: 50px;
+      right: 15px; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .goToTop {
+      bottom: 50px;
+      right: 15px; } }
+  .goToTop a:hover {
+    color: #bcccdc; }
 
 .showGTT {
   visibility: visible;
