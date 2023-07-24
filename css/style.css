@@ -32,6 +32,8 @@ breakpoint
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 *,
 *::before,
 *::after {
@@ -2172,5 +2174,211 @@ breakpoint
 .download-btn {
   right: unset;
   left: 1rem; }
+
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary); }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.25rem; }
+
+h4 {
+  font-size: 0.875rem; }
+
+p {
+  margin-bottom: 1.25rem;
+  color: #617d98; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth !important;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+.container {
+  width: 80%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 95%; } }
+
+.py {
+  padding: 60px 0 90px; }
+  @media (max-width: 1300px) {
+    .py {
+      padding: 50px 0; } }
+  @media (max-width: 768px) {
+    .py {
+      padding: 30px 0; } }
+
+.btn {
+  text-transform: uppercase;
+  background-color: #31c48e;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.3s linear;
+  font-size: 0.875rem0;
+  border: 2px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 0.5rem; }
+  .btn:hover {
+    color: #513c06;
+    background: #f9da8b; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.social-icons {
+  width: 100%;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-around; }
+  .social-icons .social-icon {
+    font-size: 1.5em;
+    color: #102a42;
+    transition: all 0.3s linear; }
+    .social-icons .social-icon:hover {
+      color: #31c48e;
+      transform: scale(1.2); }
+
+.underline, .hero .hero-info h1::before {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: #31c48e;
+  margin-left: auto;
+  margin-right: auto; }
+
+.photo, .hero .hero-img .hero-photo, .about .about-img .about-photo {
+  max-width: 25rem;
+  max-height: 30rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  position: relative; }
+
+.section-title {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 50px; }
+  .section-title::after {
+    display: block;
+    content: "";
+    width: 20%;
+    height: 5px;
+    background: #31c48e;
+    margin: 10px auto 70px auto; }
+
+/**************
+FLEX
+**************/
+/**************
+breakpoint
+**************/
+.goToTop {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #f9da8b;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f9da8b;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  visibility: hidden;
+  opacity: 0; }
+
+.showGTT {
+  visibility: visible;
+  opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */

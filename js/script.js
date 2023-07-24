@@ -33,3 +33,15 @@ closeModal.addEventListener("click", () => {
   modal.classList.remove("open-modal");
   console.log("click");
 });
+
+// go to top
+
+const goToTop = document.querySelector(".goToTop");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 500) {
+    goToTop.classList.add("showGTT");
+  } else {
+    goToTop.classList.remove("showGTT");
+  }
+});
